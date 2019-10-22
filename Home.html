@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>palendrum</title>
+</head>
+
+<body>
+
+<form method="post" action="severalsrtdecending.php"> 
+
+<label>Input Value:</label> <input type="text" name="text" /><br />
+<label>Input Value:</label> <input type="text" name="blash" /><br />
+<label>Input Value:</label> <input type="text" name="third" /><br />
+<label>Input Value:</label> <input type="text" name="forth" /><br />
+<label>Input Value:</label> <input type="text" name="fifth" /><br />
+<button type="submit" name="lng">check here</button>
+</form>
+<?php
+
+
+echo "<br/>";
+
+	if(isset ($_POST['lng'])){
+	   
+	   $text = $_POST ['text'];
+       $real = str_split($text);
+       rsort($real);
+       $count = count($real);
+       
+       for($x = 0; $x < $count; $x++) {
+            echo "$real[$x]";
+            
+            }
+       
+      
+       
+   }   
+   
+   echo "<br/>";
+   echo "<br/>";
+   
+   	if(isset ($_POST['lng'])){
+	   
+	   $text = $_POST ['blash'];
+       $real = str_split($text);
+       rsort($real);
+       $count = count($real);
+       
+       for($x = 0; $x < $count; $x++) {
+            echo "$real[$x]";
+            
+            }
+       
+    
+       
+   }   
+   
+   echo "<br/>";
+   echo "<br/>";
+   
+   
+   	if(isset ($_POST['lng'])){
+	   
+	   $text = $_POST ['third'];
+       $real = str_split($text);
+       rsort($real);
+       $count = count($real);
+       
+       for($x = 0; $x < $count; $x++) {
+            echo "$real[$x]";
+            
+            }
+       
+      
+       
+   }   
+   echo "<br/>";
+   echo "<br/>";
+   
+   
+   	if(isset ($_POST['lng'])){
+	   
+	   $text = $_POST ['forth'];
+       $real = str_split($text);
+       rsort($real);
+       $count = count($real);
+       
+       for($x = 0; $x < $count; $x++) {
+            echo "$real[$x]";
+            
+            }
+       
+      
+       
+   }   
+   echo "<br/>";
+   echo "<br/>";
+   
+   
+   
+   	if(isset ($_POST['lng'])){
+	   
+	   $text = $_POST ['fifth'];
+       $real = str_split($text);
+       rsort($real);
+       $count = count($real);
+       
+       for($x = 0; $x < $count; $x++) {
+            echo "$real[$x]";
+           
+            }
+       
+      
+       
+   }   
+?>
+
+</body>
+</html>
